@@ -1,0 +1,16 @@
+{
+    "Header": {
+        "home": "Home",
+        "tags": "Tags",
+        "about": "About"
+    },
+    "Theme": {
+        "darkMode": "Dark ",
+        "lightMode": "Light ",
+        "systemMode": "System"
+    },
+    "local": {
+        "ar": "Arabic",
+        "en": "English"
+    }
+}
