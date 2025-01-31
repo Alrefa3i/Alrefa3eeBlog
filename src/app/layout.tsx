@@ -4,7 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 import { getLocale, getMessages } from "next-intl/server";
-
+import { GoogleTagManager } from '@next/third-parties/google'
 import Header from "~/components/Header/Header";
 import Providers from "~/components/Providers/Providers";
 import { LangProvider } from "~/components/Providers/LangProvider";
@@ -67,6 +67,7 @@ export default async function RootLayout({
       className={`${GeistSans.variable}`}
       suppressHydrationWarning
     >
+      <GoogleTagManager gtmId="GTM-T63ZS8SV"/>
       <body>
         <Providers>
           <LangProvider messages={messages} locale={locale}>
@@ -76,6 +77,7 @@ export default async function RootLayout({
           </LangProvider>
         </Providers>
       </body>
+      
     </html>
   );
 }
